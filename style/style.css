@@ -1,0 +1,551 @@
+/*header*/
+
+header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 2px 60px;
+    background-color: transparent;
+    text-align: left;
+}
+
+
+/*body*/
+
+body {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #040404;
+    color: #e4e4e4;
+}
+a{
+    color: #40bcc0;
+    font-size: 16px;
+}
+h1 {
+    font-size: 70px;
+    color: #e4e4e4;
+}
+h2 {
+    font-size: 55px;
+    color: #e4e4e4;
+}
+h3 {
+    font-size: 40px;
+    color: #e4e4e4;
+}
+h4{
+    font-size: 20px;
+    color: #e4e4e4;
+}
+p {
+    max-width: 600px;
+    font-size: 16px;
+    color: #e4e4e4;
+}
+label{
+    font-size: 16px;
+}
+input[type=text],
+input[type=number],
+input[type=submit],
+input[type=button] {
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #e4e4e4;
+    box-shadow: inset 0 0 0 1px #3c3c3c;
+    transition: all 0.3s ease;
+    outline: none;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+/* Hover — мягкое свечение */
+input[type=text]:hover,
+input[type=number]:hover,
+input[type=submit]:hover,
+input[type=button]:hover {
+    box-shadow: inset 0 0 0 1px #40bcc0;
+    background-color: #2a2a2a;
+}
+
+/* Focus — сияющий обвод */
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=submit]:focus,
+input[type=button]:focus {
+    box-shadow: 0 0 8px 2px rgba(64, 188, 192, 0.6);
+    border: none;
+    outline: none;
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+/* Для кнопок — можно отдельно */
+input[type=submit],
+input[type=button] {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #3c3c3c;
+    color: #e4e4e4;
+    box-shadow: none;
+}
+input[type=submit]:hover,
+input[type=button]:hover {
+    background-color: #40bcc0;
+    color: white;
+}
+
+input[type=radio]{
+    accent-color: #40bcc0;
+}
+
+/*menu*/
+
+.menu li:hover .dropdown {
+    display: block;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 0;
+    margin: 0;
+    padding-top: 10px;
+}
+.menu li {
+    position: relative;
+}
+.menu > li > a {
+    color: #e4e4e4;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 10px;
+    display: block;
+    transition: color 0.3s;
+    width: 150px;
+}
+.menu > li > a:hover {
+    color: #40bcc0;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    z-index: 99;
+    text-align: left;
+    background: #040404;
+}
+.dropdown li a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #e4e4e4;
+    transition: background-color 0.3s;
+}
+.dropdown li a:hover {
+    color: #40bcc0;
+}
+
+
+/*footer*/
+
+footer{
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+
+/*avaleht*/
+
+.flexcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 20px;
+}
+.card {
+    flex: 1;
+    min-width: 200px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    color: #e4e4e4;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(64,188,192,1.00);
+}
+#deercontainer{
+    width: 100%;
+    text-align: right;
+    flex: 1;
+}
+#deer {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto 0 auto;
+    padding-top: 10px;
+    height: auto;
+}
+#pealkiri{
+    width: 100%;
+    text-align: left;
+    flex: 1;
+}
+
+
+/*canva*/
+
+canvas{
+    background-color: #1a1a1a;
+    width: 600px;
+    height: 450px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+#Taevas,
+#Meri,
+#Sein,
+#Katus,
+#Korsten,
+#Aken,
+#Maa,
+#Pilv,
+#Paike,
+#Rohi,
+#Uks,
+#Suits{
+    width: 180px;
+}
+#majanupp,
+#kustutanupp{
+    width: 370px;
+}
+table#tablemajake tr:nth-child(1) td:nth-child(1) {
+    width: 420px;
+    vertical-align: top;
+    text-align: left;
+}
+table#tablemajake tr:nth-child(1) td:nth-child(2) {
+    width: 150px;
+    vertical-align: top;
+}
+table#tablemajake tr:nth-child(1) td:nth-child(3) {
+    width: 150px;
+    vertical-align: top;
+}
+table#tablemajake tr:nth-child(1) td:nth-child(4) {
+    width: 150px;
+    vertical-align: top;
+}
+table#tablemajake tr:nth-child(1) td:nth-child(5) {
+    width: 150px;
+    vertical-align: top;
+}
+#radiuspaike{
+    width: 140px;
+    height: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/*kalkulaator*/
+
+#audi{
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 0 10px #3c3c3c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#audi:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(64,188,192,1.00);
+}
+#audi:active{
+    width:700px;
+}
+#BMW{
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 0 10px #3c3c3c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#BMW:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(64,188,192,1.00);
+}
+#BMW:active{
+    width:700px;
+}
+#jaguar{
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 0 10px #3c3c3c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#jaguar:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(64,188,192,1.00);
+}
+#jaguar:active{
+    width:700px;
+}
+#Merc{
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 0 10px #3c3c3c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#Merc:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(64,188,192,1.00);
+}
+#Merc:active{
+    width:700px;
+}
+#chevr{
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 0 10px #3c3c3c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#chevr:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(64,188,192,1.00);
+}
+#chevr:active{
+    width:700px;
+}
+#ford{
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 0 10px #3c3c3c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#ford:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(64,188,192,1.00);
+}
+#ford:active{
+    width:700px;
+}
+table#autod{
+    vertical-align: top;
+}
+#autovalik{
+    text-align: left;
+    max-width: 100%;
+    border-radius: 10px;
+}
+#vabaautopilt{
+    text-align: left;
+}
+#autod tr:nth-child(1) td:nth-child(3){
+    width:50px;
+}
+#autod tr:nth-child(1) td:nth-child(1){
+    width: 350px;
+    text-align: left;
+}
+#autod tr:nth-child(1) td:nth-child(2){
+     width: 350px;
+     text-align: left;
+ }
+#autod tr:nth-child(1) td:nth-child(4){
+    vertical-align: top;
+    padding-left: 30px;
+    text-align: left;
+    font-size: 18px;
+}
+#autod tr:nth-child(1) td:nth-child(5){
+    text-align: left;
+}
+#autod tr:nth-child(3) td:nth-child(3){
+    vertical-align: top;
+    padding-left: 30px;
+}
+#autod tr:nth-child(5) td:nth-child(3){
+    vertical-align: top;
+    padding-left: 30px;
+    text-align: left;
+}
+#auto1{
+    width: 20px;
+    height: 20px;
+}
+#auto2{
+    width: 20px;
+    height: 20px;
+}
+#auto3{
+    width: 20px;
+    height: 20px;
+}
+#auto4{
+    width: 20px;
+    height: 20px;
+}
+#auto5{
+    width: 20px;
+    height: 20px;
+}
+#auto6{
+    width: 20px;
+    height: 20px;
+}
+#valik{
+    width: 220px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid #3c3c3c;
+    text-align: center;
+    margin-top: 10px;
+    color: #e4e4e4;
+}
+#valikpilt{
+    width: 220px;
+}
+#vabaauto{
+    width: 220px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid #3c3c3c;
+    text-align: center;
+    margin-top: 10px;
+    color: #e4e4e4;
+}
+#tasumisele{
+    font-size: 16px;
+    font-weight: bold;
+    color: #40bcc0;
+    border-bottom: 2px solid #40bcc0;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+caption{
+    text-align: left;
+    font-size: 18px;
+}
+
+
+/*matemTehted*/
+
+.moistatus{
+    text-align: left;
+    font-size: 16px;
+}
+#formarvud{
+    text-align: left;
+}
+#kood{
+    text-align: left;
+    background-color: #e4e4e4;
+    padding: 10px;
+    border-radius: 10px;
+}
+.moistatusvasus{
+    position: relative;
+    background-color: #1a1a1a;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+}
+
+
+/*tekstFynktsioonid*/
+
+.funktsioonid{
+    text-align: left;
+    font-size: 16px;
+}
+#vastus{
+    text-align: left;
+}
+
+
+/*ajafunktsioonid*/
+
+table#aeg{
+    width: 100%;
+    table-layout: fixed;
+}
+table#aeg tr:nth-child(1) td:nth-child(1){
+    vertical-align: top;
+    width: 50%;
+}
+table#aeg tr:nth-child(1) td:nth-child(2){
+    vertical-align: top;
+    width: 50%;
+}
+#hooaeg{
+    text-align: left;
+}
+#hooajapilt{
+    position: absolute;
+    width: 200px;
+    top: 0;
+    right: 0;
+}
+#hooajanimi{
+    font-weight: bold;
+    font-size: x-large;
+    color: #40bcc0;
+}
+
